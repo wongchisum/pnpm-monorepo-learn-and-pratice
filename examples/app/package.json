@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel ./index.html"
+  },
+  "keywords": [],
+  "author": "zhisen.wang",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react-dom": "^18.0.5",
+    "parcel": "^2.5.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "dependencies": {
+    "hooks": "workspace:^1.0.0"
+  }
+}

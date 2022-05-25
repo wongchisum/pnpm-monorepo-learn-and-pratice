@@ -1,0 +1,21 @@
+{
+  "name": "hooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup ./src/index.ts --dts --format esm,cjs  --watch",
+    "build": "tsup ./src/index.ts --dts --format esm,cjs --legacy-output"
+  },
+  "keywords": [],
+  "author": "zhisen.wang",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.0.9",
+    "react": "^18.1.0"
+  },
+  "peerDependencies": {
+    "react": "^18.1.0"
+  }
+}

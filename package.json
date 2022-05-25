@@ -1,0 +1,26 @@
+{
+  "name": "pnpm-monorepo-learn-and-pratice",
+  "version": "1.0.0",
+  "description": "本仓库关于monorepo的学习和实践",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "dev:hooks": "pnpm run dev --filter=hooks",
+    "build:hooks": "pnpm run build --filter=hooks",
+    "serve:hooks": "pnpm run dev --filter=app",
+    "start:hooks": "concurrently \"pnpm run dev:hooks\" \"pnpm run serve:hooks\"",
+    "build:utils": "pnpm run build --filter=utils"
+  },
+  "keywords": [],
+  "author": "zhisen.wang",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "eslint": "^8.16.0",
+    "rollup": "^2.74.1",
+    "tsup": "^5.12.8",
+    "typescript": "^4.7.2"
+  }
+}
